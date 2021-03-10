@@ -19,3 +19,13 @@ class Conta:
     def transferencia(self, valor, destino):
         self.saque(valor)
         destino.deposito(valor)
+
+    def retorna_saldo(self):
+        return self.__saldo
+
+    def retorna_titular(self):
+        return self.__titular
+
+    def retorna_limite(self):
+        return self.__limite
+    
